@@ -1,0 +1,22 @@
+{
+  "name": "shadowkey",
+  "version": "1.0.0",
+  "description": "P2P Shamir's Secret Sharing — split a secret into N shares distributed to peers via Hyperswarm. Reconstruct only when K peers are present. Zero trust. No server.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start":       "node index.js",
+    "split":       "node index.js --mode split",
+    "reconstruct": "node index.js --mode reconstruct"
+  },
+  "keywords": ["p2p","hyperswarm","shamir","secret-sharing","cryptography","trac","intercom","termux","security","gf256"],
+  "author": "[INSERT_YOUR_TRAC_ADDRESS_HERE]",
+  "license": "MIT",
+  "dependencies": {
+    "hyperswarm":       "^4.7.15",
+    "hypercore-crypto": "^3.4.2",
+    "b4a":              "^1.6.7",
+    "minimist":         "^1.2.8"
+  },
+  "engines": { "node": ">=18.0.0" }
+}
